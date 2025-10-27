@@ -1,0 +1,49 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./*"
+      ]
+    }
+  },
+  "include": [
+    ".next/types//*.ts",
+    "/*.ts",
+    "/*.tsx",
+    "app//*",
+    "drizzle//*",
+    "lib//*",
+    "next-env.d.ts",
+    "server//*",
+    ".next/types/**/*.ts"
+, "lib/server/trpc-client.ts"  ],
+  "exclude": [
+    "node_modules"
+  ]
+
+ 
+}
